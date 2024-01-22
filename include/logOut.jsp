@@ -31,10 +31,10 @@
         $.ajax({
             type: "post",
             async:false,
-            url: "${pageContext.request.contextPath}/member/logout.do",
+            url: "<%--${pageContext.request.contextPath}--%>https://darkbisop.github.io/WebMarket/member/logout.do",
             success:function () {
                 alert("로그아웃에 성공하였습니다");
-               window.location.href = "${pageContext.request.contextPath}/index";
+               window.location.href = "<%--${pageContext.request.contextPath}--%>https://darkbisop.github.io/WebMarket/index";
             }
         });
     });
@@ -44,9 +44,9 @@
         $.ajax({
             type: "post",
             async:false,
-            url: "${pageContext.request.contextPath}/kakao/kakaoLogout",
+            url: "<%--${pageContext.request.contextPath}--%>https://darkbisop.github.io/WebMarket/kakao/kakaoLogout",
             success:function () {
-                window.location.href = "${pageContext.request.contextPath}/index";
+                window.location.href = "<%--${pageContext.request.contextPath}/index--%>https://darkbisop.github.io/WebMarket";
             }
         });
     });
@@ -56,9 +56,9 @@
         $.ajax({
             type: "post",
             async:false,
-            url: "${pageContext.request.contextPath}/google/googleLogout",
+            url: "<%--${pageContext.request.contextPath}--%>https://darkbisop.github.io/WebMarket/google/googleLogout",
             success:function () {
-                window.location.href = "${pageContext.request.contextPath}/index";
+                window.location.href = "<%--${pageContext.request.contextPath}/index--%>https://darkbisop.github.io/WebMarket/";
             }
         });
     });

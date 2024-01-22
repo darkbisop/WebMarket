@@ -67,7 +67,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <link href="https://darkbisop.github.io/WebMarket/css/memenu.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body>
-<ul class="memenu skyblue"><li class="active"><a href="/index">Home</a></li>
+<ul class="memenu skyblue"><li class="active"><a href="https://darkbisop.github.io/WebMarket/index">Home</a></li>
     <li class="grid"><a href="/shop/list?c=100&l=1">Products</a>
         <div class="mepanel">
             <div class="row">
@@ -124,11 +124,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </style>
 </head>
 <body>
-<a href="/shop/cartList">
+<a href="https://darkbisop.github.io/WebMarket/shop/cartList">
     <!-- 로그인 하지 않았을때 -->
     
-        <div class="login_button"><a href="/member/login">Login</a></div>
-        <span><a href="/member/signUp">SignUp</a></span>
+        <div class="login_button"><a href="https://darkbisop.github.io/WebMarket/member/login">Login</a></div>
+        <span><a href="https://darkbisop.github.io/WebMarket/member/signUp">SignUp</a></span>
     
 
     <!-- 로그인 했을때 -->
@@ -151,7 +151,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     $("#All_Delete_Btn").click(function() {
         if (confirm("상품을 모두 삭제하시겠습니까?")) {
             $.ajax({
-                url : "/shop/view/deleteAllCart",
+                url : "https://darkbisop.github.io/WebMarket/shop/view/deleteAllCart",
                 type : "post",
                 success : function (result) {
                     if (result === 1) {
@@ -193,10 +193,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         $.ajax({
             type: "post",
             async:false,
-            url: "/member/logout.do",
+            url: "https://darkbisop.github.io/WebMarket/member/logout.do",
             success:function () {
                 alert("로그아웃에 성공하였습니다");
-               window.location.href = "/index";
+               window.location.href = "https://darkbisop.github.io/WebMarket/index";
             }
         });
     });
@@ -206,9 +206,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         $.ajax({
             type: "post",
             async:false,
-            url: "/kakao/kakaoLogout",
+            url: "https://darkbisop.github.io/WebMarket/kakao/kakaoLogout",
             success:function () {
-                window.location.href = "/index";
+                window.location.href = "https://darkbisop.github.io/WebMarket";
             }
         });
     });
@@ -218,9 +218,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         $.ajax({
             type: "post",
             async:false,
-            url: "/google/googleLogout",
+            url: "https://darkbisop.github.io/WebMarket/google/googleLogout",
             success:function () {
-                window.location.href = "/index";
+                window.location.href = "https://darkbisop.github.io/WebMarket/";
             }
         });
     });
@@ -415,7 +415,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <h3>End of Season Sale</h3>
     <div class="offer-grids">
         <div class="col-md-6 grid-left">
-            <a href="/shop/view?n=10"><div class="offer-grid1">
+            <a href="https://darkbisop.github.io/WebMarket/shop/view?n=10"><div class="offer-grid1">
                 <div class="ofr-pic">
                     <img src="https://darkbisop.github.io/WebMarket/images/ofr2.png" alt="" width="200" height="200" />
                 </div>
@@ -428,7 +428,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div></a>
         </div>
         <div class="col-md-6 grid-right">
-            <a href="/shop/view?n=23"><div class="offer-grid2">
+            <a href="https://darkbisop.github.io/WebMarket/shop/view?n=23"><div class="offer-grid2">
                 <div class="ofr-pic-info2">
                     <h4>Flat Discount</h4>
                     <span>UP TO 30% OFF</span>

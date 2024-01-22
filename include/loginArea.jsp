@@ -11,11 +11,11 @@
     </style>
 </head>
 <body>
-<a href="${pageContext.request.contextPath}/shop/cartList">
+<a href="<%--${pageContext.request.contextPath}--%>https://darkbisop.github.io/WebMarket/shop/cartList">
     <!-- 로그인 하지 않았을때 -->
     <c:if test="${member == null and kakaoMember == null and googleMember == null}">
-        <div class="login_button"><a href="${pageContext.request.contextPath}/member/login">Login</a></div>
-        <span><a href="${pageContext.request.contextPath}/member/signUp">SignUp</a></span>
+        <div class="login_button"><a href="<%--${pageContext.request.contextPath}--%>https://darkbisop.github.io/WebMarket/member/login">Login</a></div>
+        <span><a href="<%--${pageContext.request.contextPath}--%>https://darkbisop.github.io/WebMarket/member/signUp">SignUp</a></span>
     </c:if>
 
     <!-- 로그인 했을때 -->
@@ -38,7 +38,7 @@
     </c:choose>
 
     <c:if test="${member != null or kakaoMember != null or googleMember != null}">
-        <img src="${pageContext.request.contextPath}/resources/lighting/images/cartImg.png" alt="" width="30px" height="30px"> :
+        <img src="<%--${pageContext.request.contextPath}/resources/lighting--%>https://darkbisop.github.io/WebMarket/images/cartImg.png" alt="" width="30px" height="30px"> :
         <span id="message"><fmt:formatNumber pattern="###,###,###" value="${total}"/> (${stock})</span>
         <a id="All_Delete_Btn">Empty</a>
     </c:if>
@@ -54,7 +54,7 @@
     $("#All_Delete_Btn").click(function() {
         if (confirm("상품을 모두 삭제하시겠습니까?")) {
             $.ajax({
-                url : "${pageContext.request.contextPath}/shop/view/deleteAllCart",
+                url : "<%--${pageContext.request.contextPath}--%>https://darkbisop.github.io/WebMarket/shop/view/deleteAllCart",
                 type : "post",
                 success : function (result) {
                     if (result === 1) {
