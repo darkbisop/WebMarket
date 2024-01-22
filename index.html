@@ -1,0 +1,540 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!--theme style-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Lighting A Ecommerce Category Flat Bootstarp Resposive Website Template | Home :: w3layouts</title>
+    <link href="/resources/lighting/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Custom Theme files -->
+
+    <link href="/resources/lighting/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="/resources/lighting/js/jquery.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Wedding Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+    <!-- start menu -->
+    <script src="/resources/lighting/js/simpleCart.min.js"> </script>
+    <link href="/resources/lighting/css/memenu.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="/resources/lighting/js/memenu.js"></script>
+    <script>$(document).ready(function(){$(".memenu").memenu();});</script>
+    <!-- /start menu -->
+</head>
+</html>
+
+    <title></title>
+</head>
+<body>
+<!--header-->
+<script src="https://darkbisop.github.io/WebMarket/js/responsiveslides.min.js"></script>
+<script>
+    $(function () {
+        $("#slider").responsiveSlides({
+            auto: true,
+            nav: true,
+            speed: 500,
+            namespace: "callbacks",
+            pager: false,
+        });
+    });
+</script>
+
+<div class="header-top">
+    <div class="header-bottom">
+        <div class="logo">
+            <h1><a href="https://darkbisop.github.io/WebMarket/index">Lighting</a></h1>
+        </div>
+        <!---->
+        <div class="top-nav">
+            
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="/resources/lighting/js/memenu.js"></script>
+    <link href="/resources/lighting/css/memenu.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+<ul class="memenu skyblue"><li class="active"><a href="/index">Home</a></li>
+    <li class="grid"><a href="/shop/list?c=100&l=1">Products</a>
+        <div class="mepanel">
+            <div class="row">
+                <div class="col1 me-one">
+                    <h4><a href="/shop/list?c=100&l=1">Cake</a></h4>
+                    <ul>
+                        <li><a href="/shop/list?c=101&l=2">초콜릿 케이크</a></li>
+                        <li><a href="/shop/list?c=102&l=2">딸기 케이크</a></li>
+                        <li><a href="/shop/list?c=103&l=2">허니 케이크</a></li>
+                    </ul>
+                </div>
+                <div class="col1 me-one">
+                    <h4><a href="/shop/list?c=200&l=1">Muffin</a></h4>
+                    <ul>
+                        <li><a href="/shop/list?c=201&l=2">초콜릿 머핀</a></li>
+                        <li><a href="/shop/list?c=202&l=2">딸기 머핀</a></li>
+                        <li><a href="/shop/list?c=203&l=2">허니 머핀</a></li>
+                    </ul>
+                </div>
+                <div class="col1 me-one">
+                    <h4><a href="/shop/list?c=300&l=1">Bread</a></h4>
+                    <ul>
+                        <li><a href="/shop/list?c=301&l=2">초콜릿 브레드</a></li>
+                        <li><a href="/shop/list?c=302&l=2">딸기 브레드</a></li>
+                        <li><a href="/shop/list?c=303&l=2">허니 브레드</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="grid"><a href="#">Typo</a></li>
+    <li class="grid"><a href="#">Contact</a></li>
+    
+</ul>
+</body>
+</html>
+        </div>
+        <!---->
+        <div class="lang-box">
+            <a href="/index?lang=ko" style="color:red;">한국어</a> /
+            <a href="/index?lang=ja" style="color:red;">日本語</a>
+        </div>
+        <div class="cart box_1">
+            
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title</title>
+    <style type="text/css">
+        a:link { color: red; text-decoration: none;}
+        a:visited { color: black; text-decoration: none;}
+        a:hover { color: blue; text-decoration: none;}
+    </style>
+</head>
+<body>
+<a href="/shop/cartList">
+    <!-- 로그인 하지 않았을때 -->
+    
+        <div class="login_button"><a href="/member/login">Login</a></div>
+        <span><a href="/member/signUp">SignUp</a></span>
+    
+
+    <!-- 로그인 했을때 -->
+    
+        
+        
+        
+    
+
+    
+</a>
+
+<script>
+    function resetTotal() {
+        let resetTotal = "";
+        resetTotal += "<span>" + 0 + " " + "(" + 0 + ")" + "</span>";
+        $("#message").html(resetTotal);
+    }
+
+    $("#All_Delete_Btn").click(function() {
+        if (confirm("상품을 모두 삭제하시겠습니까?")) {
+            $.ajax({
+                url : "/shop/view/deleteAllCart",
+                type : "post",
+                success : function (result) {
+                    if (result === 1) {
+                        alert("모든 상품을 삭제하였습니다");
+                        resetTotal();
+                    } else if (result === 2) {
+                        alert("상품이 존재 하지 않습니다.");
+                    }
+                },
+                error : function () {
+                    alert("삭제 하는데 실패하였습니다.")
+                }
+            });
+        }
+    });
+</script>
+</body>
+</html>
+
+            <p></p>
+            
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title</title>
+    <style>
+        a:hover {
+            color: black;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+
+<script type="text/javascript">
+    $("#gnb_logout_button").click(function() {
+        $.ajax({
+            type: "post",
+            async:false,
+            url: "/member/logout.do",
+            success:function () {
+                alert("로그아웃에 성공하였습니다");
+               window.location.href = "/index";
+            }
+        });
+    });
+
+    $("#gnb_kakaoLogout_button").click(function () {
+        location.href="https://kauth.kakao.com/oauth/logout?client_id=27455cf079b38009ee0184c422408895&logout_redirect_uri=http://darkbisop.cafe24.com/ProjectWebMarket/kakao/kakaoLogout";
+        $.ajax({
+            type: "post",
+            async:false,
+            url: "/kakao/kakaoLogout",
+            success:function () {
+                window.location.href = "/index";
+            }
+        });
+    });
+
+    $("#gnb_googleLogout_button").click(function () {
+        location.href="https://accounts.google.com/logout";
+        $.ajax({
+            type: "post",
+            async:false,
+            url: "/google/googleLogout",
+            success:function () {
+                window.location.href = "/index";
+            }
+        });
+    });
+</script>
+</body>
+</html>
+
+           
+            <div class="clearfix"> </div>
+        </div>
+        <div class="clearfix"> </div>
+        <!---->
+    </div>
+    <div class="clearfix"> </div>
+</div>
+<!---->
+<div class="slider">
+    
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<div class="callbacks_container">
+    <ul class="rslides" id="slider">
+        <li>
+            <div class="banner1">
+                <div class="banner-info">
+                    <h3>Morbi lacus hendrerit efficitur.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing elit. consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="banner2">
+                <div class="banner-info">
+                    <h3>Phasellus elementum tincidunt.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing elit. consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="banner3">
+                <div class="banner-info">
+                    <h3>Maecenas interposuere volutpat.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing elit. consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
+
+</div>
+<!---->
+<script src="https://darkbisop.github.io/WebMarket/js/bootstrap.js"> </script>
+
+<div class="items">
+   
+
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div class="items-sec">
+        <div class="col-md-3 feature-grid">
+            <a href="/shop/view?n=14"><img src="/resources/lighting/images/img1.jpg" alt="" width="500" height="200"/>
+                <div class="arrival-info">
+                    <h4>초코초코 케이크</h4>
+                    <p>19,000원</p>
+                    <span class="pric1"><del>22,000원</del></span>
+                    <span class="disc">[12% Off]</span>
+                </div>
+                <div class="viw">
+                    <a href="shop/view?n=14"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3 feature-grid">
+            <a href="/shop/view?n=15"><img src="/resources/lighting/images/img2.jpg" alt="" width="500" height="200"/>
+                <div class="arrival-info">
+                    <h4>스트로베리 케이크</h4>
+                    <p>18,000원</p>
+                    <span class="pric1"><del>22,000원</del></span>
+                    <span class="disc">[14% Off]</span>
+                </div>
+                <div class="viw">
+                    <a href="shop/view?n=15"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3 feature-grid">
+            <a href="/shop/view?n=16"><img src="/resources/lighting/images/img3.jpg" width="500" height="200" alt=""/>
+                <div class="arrival-info">
+                    <h4>딸기 믹스 케이크</h4>
+                    <p>20,000원</p>
+                    <span class="pric1"><del>22,000원</del></span>
+                    <span class="disc">[10% Off]</span>
+                </div>
+                <div class="viw">
+                    <a href="/shop/view?n=16"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3 feature-grid">
+            <a href="/shop/view?n=19"><img src="/resources/lighting/images/img6.jpg" width="500" height="200" alt=""/>
+                <div class="arrival-info">
+                    <h4>풍미가득 딸기 케이크</h4>
+                    <p>16,000원</p>
+                    <span class="pric1"><del>18,000원</del></span>
+                    <span class="disc">[12% Off]</span>
+                </div>
+                <div class="viw">
+                    <a href="/shop/view?n=19"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
+                </div>
+            </a>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="items-sec btm-sec">
+        <div class="col-md-3 feature-grid">
+            <a href="/shop/view?n=18"><img src="/resources/lighting/images/img5.jpg" width="500" height="200" alt=""/>
+                <div class="arrival-info">
+                    <h4>허늬 피넛 머핀</h4>
+                    <p>3,000원</p>
+                    <span class="pric1"><del>3,800원</del></span>
+                    <span class="disc">[8% Off]</span>
+                </div>
+                <div class="viw">
+                    <a href="/shop/view?n=18"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3 feature-grid">
+            <a href="/shop/view?n=21"><img src="/resources/lighting/images/img8.jpg" width="500" height="200" alt=""/>
+                <div class="arrival-info">
+                    <h4>초코 듬뿍 브레드</h4>
+                    <p>7,000원</p>
+                    <span class="pric1"><del>7,500원</del></span>
+                    <span class="disc">[12% Off]</span>
+                </div>
+                <div class="viw">
+                    <a href="/shop/view?n=21"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3 feature-grid">
+            <a href="/shop/view?n=20"><img src="/resources/lighting/images/img7.jpg" width="500" height="200" alt=""/>
+                <div class="arrival-info">
+                    <h4>초코 박살 브레드</h4>
+                    <p>7,000원</p>
+                    <span class="pric1"><del>8,500원</del></span>
+                    <span class="disc">[12% Off]</span>
+                </div>
+                <div class="viw">
+                    <a href="/shop/view?n=20"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3 feature-grid">
+            <a href="/shop/view?n=17"><img src="/resources/lighting/images/img4.jpg" width="500" height="200" alt=""/>
+                <div class="arrival-info">
+                    <h4>초코 듬뿍 머핀</h4>
+                    <p>3,000원</p>
+                    <span class="pric1"><del>6,000원</del></span>
+                    <span class="disc">[50% Off]</span>
+                </div>
+                <div class="viw">
+                    <a href="/shop/view?n=17"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
+                </div>
+            </a>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+</body>
+</html>
+
+</div>
+<!---->
+<div class="offers">
+    
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <h3>End of Season Sale</h3>
+    <div class="offer-grids">
+        <div class="col-md-6 grid-left">
+            <a href="/shop/view?n=10"><div class="offer-grid1">
+                <div class="ofr-pic">
+                    <img src="/resources/lighting/images/ofr2.png" alt="" width="200" height="200" />
+                </div>
+                <div class="ofr-pic-info">
+                    <h4>Emergency Lights <br>& Led Bulds</h4>
+                    <span>UP TO 60% OFF</span>
+                    <p>Shop Now</p>
+                </div>
+                <div class="clearfix"></div>
+            </div></a>
+        </div>
+        <div class="col-md-6 grid-right">
+            <a href="/shop/view?n=23"><div class="offer-grid2">
+                <div class="ofr-pic-info2">
+                    <h4>Flat Discount</h4>
+                    <span>UP TO 30% OFF</span>
+                    <h5>Outdoor Gate Lights</h5>
+                    <p>Shop Now</p>
+                </div>
+                <div class="ofr-pic2">
+                    <img src="/resources/lighting/images/ofr3.png" width="250" height="180" alt=""/>
+                </div>
+                <div class="clearfix"></div>
+            </div></a>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+</body>
+</html>
+
+</div>
+<!---->
+<div class="subscribe">
+    <div class="container">
+        <h3>Newsletter</h3>
+        <form>
+            <input type="text" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+            <input type="submit" value="Subscribe">
+        </form>
+    </div>
+</div>
+<!---->
+<div class="footer">
+    
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div class="footer-grids">
+        <div class="col-md-3 about-us">
+            <h3>About Us</h3>
+            <p>Maecenas nec auctor sem. Vivamus porttitor tincidunt elementum nisi a, euismod rhoncus urna. Curabitur scelerisque vulputate arcu eu pulvinar. Fusce vel neque diam</p>
+        </div>
+        <div class="col-md-3 ftr-grid">
+            <h3>Information</h3>
+            <ul class="nav-bottom">
+                <li><a href="#">Track Order</a></li>
+                <li><a href="#">New Products</a></li>
+                <li><a href="#">Location</a></li>
+                <li><a href="#">Our Stores</a></li>
+                <li><a href="#">Best Sellers</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 ftr-grid">
+            <h3>More Info</h3>
+            <ul class="nav-bottom">
+                <li><a href="/member/login">Login</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Membership</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 ftr-grid">
+            <h3>Categories</h3>
+            <ul class="nav-bottom">
+                <li><a href="#">Car Lights</a></li>
+                <li><a href="#">LED Lights</a></li>
+                <li><a href="#">Decorates</a></li>
+                <li><a href="#">Wall Lights</a></li>
+                <li><a href="#">Protectors</a></li>
+            </ul>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+</body>
+</html>
+
+</div>
+<!---->
+<div class="copywrite">
+    
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div class="copy">
+        <p>© 2015 Lighting. All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+    </div>
+    <div class="social">
+        <a href="#"><i class="facebook"></i></a>
+        <a href="#"><i class="twitter"></i></a>
+        <a href="#"><i class="dribble"></i></a>
+        <a href="#"><i class="google"></i></a>
+        <a href="#"><i class="youtube"></i></a>
+    </div>
+    <div class="clearfix"></div>
+</div>
+</body>
+</html>
+
+
+</div>
+<!---->
+</body>
+</html>
