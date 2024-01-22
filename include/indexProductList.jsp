@@ -8,7 +8,7 @@
 <div class="container">
     <div class="items-sec">
         <div class="col-md-3 feature-grid">
-            <a href="https://darkbisop.github.io/WebMarket/shop/view?n=14"><img src="<%--${pageContext.request.contextPath}/resources/lighting/--%>https://darkbisop.github.io/WebMarket/images/img1.jpg" alt="" width="500" height="200"/>
+            <a href="${pageContext.request.contextPath}/shop/view?n=14"><img src="<%--${pageContext.request.contextPath}/resources/lighting/--%>https://darkbisop.github.io/WebMarket/images/img1.jpg" alt="" width="500" height="200"/>
                 <div class="arrival-info">
                     <h4><spring:message code="message.indexProductList.p1" /></h4>
                     <p>19,000원</p>

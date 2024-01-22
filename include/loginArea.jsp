@@ -14,8 +14,8 @@
 <a href="<%--${pageContext.request.contextPath}--%>https://darkbisop.github.io/WebMarket/shop/cartList">
     <!-- 로그인 하지 않았을때 -->
     <c:if test="${member == null and kakaoMember == null and googleMember == null}">
-        <div class="login_button"><a href="<%--${pageContext.request.contextPath}--%>https://darkbisop.github.io/WebMarket/member/login">Login</a></div>
-        <span><a href="<%--${pageContext.request.contextPath}--%>https://darkbisop.github.io/WebMarket/member/signUp">SignUp</a></span>
+        <div class="login_button"><a href="${pageContext.request.contextPath}/member/login">Login</a></div>
+        <span><a href="${pageContext.request.contextPath}/member/signUp">SignUp</a></span>
     </c:if>
 
     <!-- 로그인 했을때 -->

@@ -95,7 +95,7 @@
 
                 /* 최종 유효성 검사 */
                 if (idCheck && overlapIdCheck && pwCheck && pwConfirmCheck && nameCheck && mailCheck && mailNumCheck && addrCheck) {
-                    $("#signUp_form").attr("action", "<%--${pageContext.request.contextPath}--%>https://darkbisop.github.io/WebMarket/member/signUp")
+                    $("#signUp_form").attr("action", "${pageContext.request.contextPath}/member/signUp")
                     $("#signUp_form").submit();
                     alert("회원이 되신것을 축하 합니다!");
                 }
@@ -113,7 +113,7 @@
 
                     $.ajax({
                         type: "post",
-                        url: "<%--${pageContext.request.contextPath}--%>https://darkbisop.github.io/WebMarket/member/memberIdCheck",
+                        url: "${pageContext.request.contextPath}/member/memberIdCheck",
                         data: data,
                         success : function(result) {
                             if (result !== "fail") {
@@ -228,7 +228,7 @@
 
                 $.ajax({
                     type: "get",
-                    url: "<%--${pageContext.request.contextPath}--%>https://darkbisop.github.io/WebMarket/member/mailCheck?email=" + email,
+                    url: "${pageContext.request.contextPath}/member/mailCheck?email=" + email,
                     success: function(data) {
                         checkBox.attr("disabled", false);
                         boxWrap.attr("id", "mail_check_input_box_true");

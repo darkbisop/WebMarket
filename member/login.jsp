@@ -27,7 +27,7 @@
             <div class="card-body login-card-body">
                 <p class="login-box-msg">Sign in to start your session</p>
 
-                <form action="<%--${pageContext.request.contextPath}--%>https://darkbisop.github.io/WebMarket/member/login.do" method="post" id="loginForm">
+                <form action="${pageContext.request.contextPath}/member/login.do" method="post" id="loginForm">
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <div class="input-group-text">
@@ -60,10 +60,10 @@
 
                 <div class="social-auth-links text-center mb-3">
                     <p>- OR -</p>
-                    <p><a href="<%--${pageContext.request.contextPath}--%>https://darkbisop.github.io/WebMarket/google/googleLogin">
+                    <p><a href="${pageContext.request.contextPath}/google/googleLogin">
                         <img src="<%--${pageContext.request.contextPath}/resources--%>https://darkbisop.github.io/WebMarket/dist/img/btn_google_signin_dark_normal_web.png"  alt=""/>
                     </a></p>
-                    <a href="<%--${pageContext.request.contextPath}--%>https://darkbisop.github.io/WebMarket/kakao/kakaoLogin">
+                    <a href="${pageContext.request.contextPath}/kakao/kakaoLogin">
                         <img src="<%--${pageContext.request.contextPath}/resources--%>https://darkbisop.github.io/WebMarket/dist/img/kakao_login_medium_narrow.png"  alt=""/>
                     </a>
                 </div>
@@ -72,14 +72,14 @@
                     <a href="#">I forgot my password</a>
                 </p>
                 <p class="mb-0">
-                    <a href="<%--${pageContext.request.contextPath}--%>https://darkbisop.github.io/WebMarket/member/signUp" class="text-center">Register a new membership</a>
+                    <a href="${pageContext.request.contextPath}/member/signUp" class="text-center">Register a new membership</a>
                 </p>
             </div>
         </div>
     </div>
 
     <!-- 실제 서버로 전송되는 form -->
-    <form action="<%--${pageContext.request.contextPath}--%>https://darkbisop.github.io/WebMarket/member/login.do" method="post" id="hiddenForm">
+    <form action="${pageContext.request.contextPath}/member/login.do" method="post" id="hiddenForm">
         <input type="hidden" name="memberId" />
         <input type="hidden" name="memberPw" />
     </form>
